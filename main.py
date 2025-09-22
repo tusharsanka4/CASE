@@ -26,7 +26,7 @@ agent = Agent(
 ...
 
 console.print(Panel(
-    Text("Welcome to the Nepal News Agent Chat! Type 'exit' to quit.", style="bold yellow"),
+    Text("Hello There!", style="bold yellow"),
     title="Agent Chat",
     title_align="center"
 ))
