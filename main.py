@@ -1,13 +1,12 @@
 from pydantic_ai import Agent
-from pydantic_ai.tools.tavily import tavily_search_tool
 from pydantic_ai.models.groq import GroqModel
 from pydantic_ai.providers.groq import GroqProvider
+from pydantic_ai.common_tools.tavily import tavily_search_tool
 import os
 from dotenv import load_dotenv
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
-
 from settings import Settings
 
 settings = Settings()
@@ -58,3 +57,5 @@ while True:
             title="Error",
             border_style="red"
         ))
+
+return agent_output

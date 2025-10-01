@@ -9,6 +9,7 @@ load_dotenv(dotenv_path=".env", override=True)
 class Settings(BaseSettings):
     GROQ_API_KEY: str
     TAVILY_API_KEY: str
+    DISCORD_API_KEY: str
     
     class Config:
         env_file = ".env"
